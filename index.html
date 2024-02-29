@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = "">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Phone Hunter Api</title>
+</head>
+<body class="container mx-auto">
+    <header>
+        <h1 class="text-3xl font-semibold text-center mt-5 my-5">Phone Hunting</h1>
+    </header>
+    <main>
+
+        <section class="my-4">
+            <div class="bg-gray-50 p-4 rounded-md">
+                <input id="search-field" type="text" placeholder="Search here" class="input w-full max-w-xs bg-slate-200" />
+                <button onclick="handleSearch()" class="btn btn-active btn-primary">Primary</button>
+            </div>
+        </section>
+
+        <section>
+            <div id="phone-container" class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./js/phone.js"></script>
+</body>
+</html>
